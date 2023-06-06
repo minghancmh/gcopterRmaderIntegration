@@ -48,12 +48,15 @@ Maps::randomMapGenerate()
   for (int i = 0; i < _ObsNum; i++)
   {
     double x, y;
-    x = rand_x(eng);
-    y = rand_y(eng);
+    // x = rand_x(eng);
+    // y = rand_y(eng);
+    x = 0.0; // remove randomness, set the (x,y) of the box
+    y = 0.0;
 
     double w, h;
     w = rand_w(eng);
-    h = rand_h(eng);
+    // h = rand_h(eng);
+    h = 2; //set the height of the box
 
     int widNum = ceil(w / _resolution);
     int heiNum = ceil(h / _resolution);

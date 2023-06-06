@@ -108,6 +108,8 @@ public:
         mapSub = nh.subscribe(config.mapTopic, 1, &GlobalPlanner::mapCallBack, this,
                               ros::TransportHints().tcpNoDelay());
 
+        // subscribes to the nav goal
+        // config.targetTopic is set to /move_base_simple/goal, which allows targetSub to subscribe to 2D nav goal from rviz
         targetSub = nh.subscribe(config.targetTopic, 1, &GlobalPlanner::targetCallBack, this,
                                  ros::TransportHints().tcpNoDelay());
     }
@@ -141,9 +143,14 @@ public:
     }
 
     inline void plan()
-    {
+    {   
+        Eigen::Vector3d start(-4,0,0);
+        Eigen::Vector3d end(4,0,0);
+        startGoal.clear();
+        startGoal.emplace_back(start);
+        startGoal.emplace_back(end); 
         if (startGoal.size() == 2)
-        {
+        {   
             std::vector<Eigen::Vector3d> route;
             sfc_gen::planPath<voxel_map::VoxelMap>(startGoal[0],
                                                    startGoal[1],
@@ -231,6 +238,7 @@ public:
 
     inline void targetCallBack(const geometry_msgs::PoseStamped::ConstPtr &msg)
     {
+        // std::cout << "targetCallBack" << std::endl;
         if (mapInitialized)
         {
             if (startGoal.size() >= 2)
@@ -241,6 +249,7 @@ public:
                                  fabs(msg->pose.orientation.z) *
                                      (config.mapBound[5] - config.mapBound[4] - 2 * config.dilateRadius);
             const Eigen::Vector3d goal(msg->pose.position.x, msg->pose.position.y, zGoal);
+            // const Eigen::Vector3d goal(-4,0,0);
             if (voxelMap.query(goal) == 0)
             {
                 visualizer.visualizeStartGoal(goal, 0.5, startGoal.size());
@@ -258,6 +267,7 @@ public:
 
     inline void process()
     {
+        // std::cout << "Process" << std::endl;
         Eigen::VectorXd physicalParams(6);
         physicalParams(0) = config.vehicleMass;
         physicalParams(1) = config.gravAcc;
@@ -271,7 +281,8 @@ public:
                       physicalParams(3), physicalParams(4), physicalParams(5));
 
         if (traj.getPieceNum() > 0)
-        {
+        {   
+            // std::cout << "process traj" << std::endl;
             const double delta = ros::Time::now().toSec() - trajStamp;
             if (delta > 0.0 && delta < traj.getTotalDuration())
             {
