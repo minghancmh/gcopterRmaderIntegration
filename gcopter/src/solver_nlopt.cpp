@@ -135,6 +135,11 @@ int SolverNlopt::getNumOfQCQPsRun()
   return num_of_QCQPs_run_;
 }
 
+OctopusSearch* SolverNlopt::getOctopusSolver()
+{
+  return octopusSolver_;
+}
+
 /*bool SolverNlopt::intersects()
 {
   typedef CGAL::Simple_cartesian<double> K;

@@ -45,6 +45,7 @@ public:
   int getNumOfQCQPsRun();
   void getSolution(mt::PieceWisePol &solution);
   double getTimeNeeded();
+  OctopusSearch* getOctopusSolver();
 
   int B_SPLINE = 1;  // B-Spline Basis
   int MINVO = 2;     // Minimum volume basis
@@ -302,7 +303,7 @@ private:
   bool allow_infeasible_guess_ = false;
 
   separator::Separator *separator_solver_;
-public: // used only for accessing octopusSolver_ in test_nlopt, shpould make private alter and implement a proper getter method
+// public: // used only for accessing octopusSolver_ in test_nlopt, shpould make private alter and implement a proper getter method
   OctopusSearch *octopusSolver_;
 
   double Ra_ = 1e10;

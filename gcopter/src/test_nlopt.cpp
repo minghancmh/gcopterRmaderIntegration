@@ -246,11 +246,11 @@ int main(int argc, char** argv)
 
   // Recover all the trajectories found and the best trajectory
   // std::vector<mt::trajectory> all_trajs_found;
-  // snlopt.octopusSolver_ -> getAllTrajsFound(all_trajs_found);
+  // snlopt.getOctopusSolver() -> getAllTrajsFound(all_trajs_found);
 
   mt::trajectory best_traj_found;
   mt::PieceWisePol pwp_best_traj_found;
-  snlopt.octopusSolver_ -> getBestTrajFound(best_traj_found, pwp_best_traj_found, dc);
+  snlopt.getOctopusSolver() -> getBestTrajFound(best_traj_found, pwp_best_traj_found, dc);
 
   int increm = 2;
   int increm_best = 1;
@@ -293,7 +293,7 @@ int main(int argc, char** argv)
 
   // Get the edges of the convex hulls and publish them
   mt::Edges edges_convex_hulls;
-  snlopt.octopusSolver_ -> getEdgesConvexHulls(edges_convex_hulls);
+  snlopt.getOctopusSolver() -> getEdgesConvexHulls(edges_convex_hulls);
   convex_hulls_pub.publish(mu::edges2Marker(edges_convex_hulls, mu::color(mu::red_normal)));
 
   // publish the trajectories (all the other possible trajectories)
