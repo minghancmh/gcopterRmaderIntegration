@@ -8,6 +8,7 @@
 
 #include <eigen3/Eigen/Dense>
 // #include "octopus_search.hpp"
+#include "termcolor.hpp"
 #include "cgal_utils.hpp"
 #include "octopus_search.hpp"
 #include "utils.hpp"
@@ -38,6 +39,7 @@
 #include <memory>
 #include <chrono>
 #include <random>
+#include <chrono>
 
 struct Config
 {
@@ -163,6 +165,7 @@ public:
 
     inline void plan()
     {   
+        // std::cout<<"Planning"<<std::endl;
         Eigen::Vector3d start(-4,0,0);
         Eigen::Vector3d end(4,0,0);
         startGoal.clear();
@@ -279,7 +282,12 @@ public:
                 ROS_WARN("Infeasible Position Selected !!!\n");
             }
 
+            auto t1 = std::chrono::high_resolution_clock::now();
             plan();
+            auto t2 = std::chrono::high_resolution_clock::now();
+            std::chrono::duration <double, std::milli> time_delta = t2 - t1;
+
+            std::cout<< termcolor::red << "Time for planner algorithm (GCOPTER): " << time_delta.count() << "ms" << termcolor::reset << std::endl;
         }
         return;
     }
@@ -364,7 +372,7 @@ visualization_msgs::Marker getMarker(Eigen::Vector3d& center, double bbox_x, dou
 {
   visualization_msgs::Marker m;
   m.type = visualization_msgs::Marker::CUBE;
-  m.header.frame_id = "world";
+  m.header.frame_id = "odom";
   m.header.stamp = ros::Time::now();
   m.ns = "marker_dyn_obs";
   m.action = visualization_msgs::Marker::ADD;
@@ -439,7 +447,7 @@ int main(int argc, char** argv)
 
     // convert the obstacles polyhedron arrays
     decomp_ros_msgs::PolyhedronArray poly_msg = DecompROS::polyhedron_array_to_ros(cu::vectorGCALPol2vectorJPSPol(tmp));
-    poly_msg.header.frame_id = "world";
+    poly_msg.header.frame_id = "odom";
     jps_poly_pubs[i].publish(poly_msg);
   }
 

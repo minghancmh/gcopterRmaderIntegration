@@ -29,7 +29,6 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: GlobalMap
-
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -71,64 +70,29 @@ Visualization Manager:
       Update Interval: 0
       Value: true
 
-    - Class: rviz/Marker
+    - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /visualizer/waypoints
-      Name: Marker
+      Marker Topic: best_trajectory_found
+      Name: BestTraj
       Namespaces:
-        {}
+        traj622: true
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /visualizer/route
-      Name: Marker
+      Enabled: false
+      Marker Topic: /convex_hulls
+      Name: ConvexHulls
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /visualizer/mesh
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /visualizer/edge
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /visualizer/spheres
-      Name: Marker
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /visualizer/trajectory
-      Name: Marker
-      Scale: 0.1
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-
-
+      Value: false
 
     - Alpha: 0.05000000074505806
       BoundColor: 0; 0; 0
       Class: decomp_rviz_plugins/PolyhedronArray
       Enabled: true
       MeshColor: 46; 52; 54
-      Name: Obstacle
+      Name: Obstacles0
       Queue Size: 10
       Scale: 0.009999999776482582
       State: Both
@@ -137,7 +101,6 @@ Visualization Manager:
       Value: true
       VsColor: 239; 41; 41
       VsScale: 1
-  
     - Alpha: 1
       Class: rviz/PointStamped
       Color: 204; 41; 204
@@ -192,7 +155,8 @@ Visualization Manager:
           Value: true
       Enabled: true
       Name: GlobalMap
-   
+
+  
   Enabled: true
   Global Options:
     Background Color: 238; 238; 236
@@ -221,7 +185,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 62.165191650390625
+      Distance: 20
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -229,18 +193,18 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -2.1948978900909424
-        Y: 10.723564147949219
-        Z: 1.8768043518066406
-      Focal Shape Fixed Size: false
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9497969150543213
-      Target Frame: drone1
-      Yaw: 2.6666667461395264
-    Saved: ~world
+      Pitch: 0.7697969675064087
+      Target Frame: <Fixed Frame>
+      Yaw: 0.8131442070007324
+    Saved: ~
 Window Geometry:
   Displays:
     collapsed: false

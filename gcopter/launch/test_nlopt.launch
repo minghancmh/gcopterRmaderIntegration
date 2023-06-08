@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
+	
 
+	<node pkg="gcopter" type="test_nlopt" name="test_nlopt" output="screen">
+		<param name="basis" value="MINVO"/> 
+	</node>
+	
+
+	<!-- <node pkg="rmader" type="test_octopus_search" name="test_octopus_search" output="screen" > -->
+		<!-- <param name="basis" value="MINVO"/> MINVO   or   B_SPLINE or BEZIER -->
+	<!-- </node> -->
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find gcopter)/config/test_nlopt.rviz"/>
 <node pkg="mockamap" type="mockamap_node" name="mockamap_node" output="screen">
   <param name="seed" type="int" value="0"/>
   <!-- <param name="update_freq" type="double" value="1.0"/> -->
@@ -33,11 +44,6 @@
   <remap from="/mock_map" to="/voxel_map"/>
   </node>
 
-<node pkg="gcopter" type="single_obstacle" name="single_obstacle" output="screen">
-<rosparam file="$(find gcopter)/config/global_planning.yaml" command="load" />
-</node>
 
-<!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find gcopter)/config/global_planning.rviz"/> -->
-<node pkg="rviz" type="rviz" name="rviz" args="-d $(find gcopter)/config/octopus_search.rviz"/>
 
 </launch>

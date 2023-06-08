@@ -303,8 +303,12 @@ void SolverNlopt::generateAStarGuess(bool& is_stuck, bool& is_A_star_failed, boo
   std::vector<Eigen::Vector3d> q;
   std::vector<Eigen::Vector3d> n;
   std::vector<double> d;
+  auto t1 = std::chrono::high_resolution_clock::now();
   bool is_feasible = octopusSolver_->run(q, n, d, is_stuck, is_q0_fail);
+  auto t2 = std::chrono::high_resolution_clock::now();
+  std::chrono::duration <double, std::milli> time_delta = t2 - t1;
 
+  std::cout<< termcolor::red << "Time for planner algorithm (RMADER - octopusSolver_ -> run): " << time_delta.count() << "ms" << termcolor::reset << std::endl;
   num_of_LPs_run_ = octopusSolver_->getNumOfLPsRun();
   // std::cout << "After Running solved, n= " << std::endl;
   // printStd(n);
