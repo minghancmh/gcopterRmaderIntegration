@@ -90,8 +90,8 @@ Visualization Manager:
     - Alpha: 0.05000000074505806
       BoundColor: 0; 0; 0
       Class: decomp_rviz_plugins/PolyhedronArray
-      Enabled: true
-      MeshColor: 46; 52; 54
+      Enabled: true 
+      MeshColor: 46; 52; 54 
       Name: Obstacles0
       Queue Size: 10
       Scale: 0.009999999776482582
@@ -101,6 +101,273 @@ Visualization Manager:
       Value: true
       VsColor: 239; 41; 41
       VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles1
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_1
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles2
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_2
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles3
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_3
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles4
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_4
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles5
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_5
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles6
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_6
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles7
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_7
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles8
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_8
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles9
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_9
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles10
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_10
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles11
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_11
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles12
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_12
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles13
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_13
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles14
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_14
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles15
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_15
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles16
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_16
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles17
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_17
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles18
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_18
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+    - Alpha: 0.05000000074505806
+      BoundColor: 0; 0; 0
+      Class: decomp_rviz_plugins/PolyhedronArray
+      Enabled: true 
+      MeshColor: 46; 52; 54 
+      Name: Obstacles19
+      Queue Size: 10
+      Scale: 0.009999999776482582
+      State: Both
+      Topic: poly_jps_int_19
+      Unreliable: false
+      Value: true
+      VsColor: 239; 41; 41
+      VsScale: 1
+
     - Alpha: 1
       Class: rviz/PointStamped
       Color: 204; 41; 204
@@ -208,7 +475,7 @@ Visualization Manager:
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1376
+  Height: 1000
   Hide Left Dock: false
   Hide Right Dock: false
   QMainWindow State: 000000ff00000000fd0000000400000000000001e6000004c2fc0200000008fb0000001200530065006c0065006300740069006f006e010000003d0000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000de00000421000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000004c2fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d000004c2000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000009bd0000003efc0100000002fb0000000800540069006d00650100000000000009bd000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000006bc000004c200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
@@ -220,6 +487,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 2493
+  Width: 1900
   X: 927
   Y: 1149

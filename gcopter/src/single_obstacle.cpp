@@ -166,8 +166,8 @@ public:
     inline void plan()
     {   
         // std::cout<<"Planning"<<std::endl;
-        Eigen::Vector3d start(-4,0,0);
-        Eigen::Vector3d end(4,0,0);
+        Eigen::Vector3d start(-10,10,0);
+        Eigen::Vector3d end(10,-10,0);
         startGoal.clear();
         startGoal.emplace_back(start);
         startGoal.emplace_back(end); 
@@ -410,51 +410,51 @@ int main(int argc, char** argv)
 
   int num_of_obs_up = (num_of_obs - 1) / 2.0;
 
-  ConvexHullsOfCurves hulls_curves;
-  ConvexHullsOfCurve hulls_curve = createStaticObstacle(0.0, 0.0, bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
-  hulls_curves.push_back(hulls_curve);
+//   ConvexHullsOfCurves hulls_curves;
+//   ConvexHullsOfCurve hulls_curve = createStaticObstacle(0.0, 0.0, bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
+//   hulls_curves.push_back(hulls_curve);
 
 
-  mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
+//   mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
 
-    std::vector<ros::Publisher> jps_poly_pubs;  // = nh.advertise<decomp_ros_msgs::PolyhedronArray>("poly_jps", 1, true);
-  std::vector<ros::Publisher> traj_obstacle_colored_pubs;
+    // std::vector<ros::Publisher> jps_poly_pubs;  // = nh.advertise<decomp_ros_msgs::PolyhedronArray>("poly_jps", 1, true);
+//   std::vector<ros::Publisher> traj_obstacle_colored_pubs;
 //   std::vector<ros::Publisher> best_trajectory_found_intervals_pubs;
 
 
 
-  for (int i = 0; i < num_pol; i++)
-  {
-    ros::Publisher tmp =
-        nh_.advertise<visualization_msgs::MarkerArray>("/traj_obstacle_colored_int_" + std::to_string(i), 1, true);
-    traj_obstacle_colored_pubs.push_back(tmp);
+//   for (int i = 0; i < num_pol; i++)
+//   {
+//     ros::Publisher tmp =
+//         nh_.advertise<visualization_msgs::MarkerArray>("/traj_obstacle_colored_int_" + std::to_string(i), 1, true);
+//     traj_obstacle_colored_pubs.push_back(tmp);
 
-    ros::Publisher tmp2 = nh_.advertise<decomp_ros_msgs::PolyhedronArray>("/poly_jps_int_" + std::to_string(i), 1, true);
-    jps_poly_pubs.push_back(tmp2);
+//     ros::Publisher tmp2 = nh_.advertise<decomp_ros_msgs::PolyhedronArray>("/poly_jps_int_" + std::to_string(i), 1, true);
+//     jps_poly_pubs.push_back(tmp2);
 
-    // ros::Publisher tmp3 =
-    //     nh.advertise<visualization_msgs::MarkerArray>("/best_trajectory_found_int_" + std::to_string(i), 1, true);
-    // best_trajectory_found_intervals_pubs.push_back(tmp3);
-  }
+//     // ros::Publisher tmp3 =
+//     //     nh.advertise<visualization_msgs::MarkerArray>("/best_trajectory_found_int_" + std::to_string(i), 1, true);
+//     // best_trajectory_found_intervals_pubs.push_back(tmp3);
+//   }
 
-  for (int i = 0; i < num_pol; i++)
-  {
-    ConvexHullsOfCurve tmp2;
-    ConvexHullsOfCurves tmp;
+//   for (int i = 0; i < num_pol; i++)
+//   {
+//     ConvexHullsOfCurve tmp2;
+//     ConvexHullsOfCurves tmp;
 
-    tmp2.push_back(hulls_curve[i]);
-    tmp.push_back(tmp2);
+//     tmp2.push_back(hulls_curve[i]);
+//     tmp.push_back(tmp2);
 
-    // convert the obstacles polyhedron arrays
-    decomp_ros_msgs::PolyhedronArray poly_msg = DecompROS::polyhedron_array_to_ros(cu::vectorGCALPol2vectorJPSPol(tmp));
-    poly_msg.header.frame_id = "odom";
-    jps_poly_pubs[i].publish(poly_msg);
-  }
+//     // convert the obstacles polyhedron arrays
+//     decomp_ros_msgs::PolyhedronArray poly_msg = DecompROS::polyhedron_array_to_ros(cu::vectorGCALPol2vectorJPSPol(tmp));
+//     poly_msg.header.frame_id = "odom";
+//     jps_poly_pubs[i].publish(poly_msg);
+//   }
 
 
 
   // Get the edges of the convex hulls and publish them
-  mt::Edges edges_convex_hulls;
+//   mt::Edges edges_convex_hulls;
 
 
 
@@ -469,6 +469,7 @@ int main(int argc, char** argv)
   while (ros::ok())
   {
     global_planner.process();
+    // global_planner.plan();
     ros::spinOnce();
     lr.sleep();
   }

@@ -44,19 +44,23 @@ Maps::randomMapGenerate()
   rand_y = std::uniform_real_distribution<double>(_y_l, _y_h);
   rand_w = std::uniform_real_distribution<double>(_w_l, _w_h);
   rand_h = std::uniform_real_distribution<double>(_h_l, _h_h);
-
+  // double y = 0.0;
+  // double x = 0.0;
+  std::srand(1234);
   for (int i = 0; i < _ObsNum; i++)
   {
     double x, y;
+    x = std::rand() % 10 - 5;
+    y = std::rand() % 10 - 5;
     // x = rand_x(eng);
     // y = rand_y(eng);
-    x = 0.0; // remove randomness, set the (x,y) of the box
-    y = 0.0;
+    // x = 0.0; // remove randomness, set the (x,y) of the box
+    // y = 0.0;
 
     double w, h;
     w = rand_w(eng);
     // h = rand_h(eng);
-    h = 2; //set the height of the box
+    h = 5; //set the height of the box
 
     int widNum = ceil(w / _resolution);
     int heiNum = ceil(h / _resolution);
@@ -68,6 +72,8 @@ Maps::randomMapGenerate()
     sh = widNum / 2;
 
     for (int r = rl; r < rh; r++)
+    {
+
       for (int s = sl; s < sh; s++)
       {
         for (int t = 0; t < heiNum; t++)
@@ -80,9 +86,19 @@ Maps::randomMapGenerate()
             pt_random.y = y + s * _resolution;
             pt_random.z = t * _resolution;
             info.cloud->points.push_back(pt_random);
+            // std::cout << "[mockamap] Point: " << " x:" << pt_random.x << " y:" << pt_random.y << " z:" << pt_random.z << std::endl;
           }
         }
       }
+    }
+
+    // y++;
+    // x = x+2;
+
+    // pt_random.x = 5.0;
+    // pt_random.y = 5.0;
+    // pt_random.z = 0.0;
+    // info.cloud -> points.push_back(pt_random);
   }
 
   info.cloud->width    = info.cloud->points.size();

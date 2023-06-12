@@ -946,7 +946,7 @@ visualization_msgs::MarkerArray mu::trajectory2ColoredMarkerArray(const mt::traj
   p_last.x = data[0].pos(0);
   p_last.y = data[0].pos(1);
   p_last.z = data[0].pos(2);
-
+  // std::cout << termcolor::red << data[data.size()-1].pos(0) <<" " <<data[data.size()-1].pos(1)<<" " <<data[data.size()-1].pos(2) << termcolor::reset<<std::endl;
   increm = (increm < 1.0) ? 1 : increm;
 
   int j = 9000;

@@ -99,9 +99,9 @@ int main(int argc, char** argv)
 
   double bbox_x = 1; // original 0.4 for all
   double bbox_y = 1;
-  double bbox_z = 2;
+  double bbox_z = 5;
   // int num_pol = 4; // original
-  int num_pol = 7;
+  int num_pol = 20;
   int deg_pol = 3;
   int samples_x = 5;  // odd number
   int samples_y = 5;  // odd number
@@ -124,6 +124,7 @@ int main(int argc, char** argv)
     ros::Publisher tmp3 =
         nh.advertise<visualization_msgs::MarkerArray>("/best_trajectory_found_int_" + std::to_string(i), 1, true);
     best_trajectory_found_intervals_pubs.push_back(tmp3);
+    
   }
 
   std::string basis;
@@ -151,8 +152,11 @@ int main(int argc, char** argv)
 
   
 
-  ConvexHullsOfCurve hulls_curve = createStaticObstacle(0.0, 0.0, bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
-  hulls_curves.push_back(hulls_curve);
+  // ConvexHullsOfCurve hulls_curve = createStaticObstacle(0.0, 0.0, bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
+  // hulls_curves.push_back(hulls_curve);
+  // ConvexHullsOfCurve hulls_curve2 = createStaticObstacle(5.0, 5.0, bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
+  // hulls_curves.push_back(hulls_curve2);
+
 
   for (int i = 0; i < ma_vector.size(); i++)
   {
@@ -161,14 +165,21 @@ int main(int argc, char** argv)
 
   std::cout << "hulls_curves.size()= " << hulls_curves.size() << std::endl;
 
-  mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
-
+  // mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
+  std::srand(1234);
   for (int i = 0; i < num_pol; i++)
   {
+    double x_rand = std::rand()%10 - 5;
+    double y_rand = std::rand()%10 - 5;
+    // std::cout << "[cgal] Point: " << " x:" << x_rand << " y:" << y_rand << std::endl;
+
+    ConvexHullsOfCurve hc = createStaticObstacle(x_rand ,y_rand , bbox_z / 2.0, num_pol, bbox_x, bbox_y, bbox_z);
+    hulls_curves.push_back(hc);
+
     ConvexHullsOfCurve tmp2;
     ConvexHullsOfCurves tmp;
 
-    tmp2.push_back(hulls_curve[i]);
+    tmp2.push_back(hc[i]);
     tmp.push_back(tmp2);
 
     // convert the obstacles polyhedron arrays
@@ -176,6 +187,23 @@ int main(int argc, char** argv)
     poly_msg.header.frame_id = "odom";
     jps_poly_pubs[i].publish(poly_msg);
   }
+
+    mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
+
+
+  //   for (int i = 0; i < num_pol; i++)
+  // {
+  //   ConvexHullsOfCurve tmp2;
+  //   ConvexHullsOfCurves tmp;
+
+  //   tmp2.push_back(hulls_curve[i]);
+  //   tmp.push_back(tmp2);
+
+  //   // convert the obstacles polyhedron arrays
+  //   decomp_ros_msgs::PolyhedronArray poly_msg = DecompROS::polyhedron_array_to_ros(cu::vectorGCALPol2vectorJPSPol(tmp));
+  //   poly_msg.header.frame_id = "odom";
+  //   jps_poly_pubs[0].publish(poly_msg);
+  // }
 
 
 
@@ -193,7 +221,7 @@ int main(int argc, char** argv)
   parameters.v_max = v_max; // is now 7,7,7, original (20,20,20)
   parameters.a_max = a_max; // is now 400000, 400000, 400000 original (20,20,20)
   parameters.dc = dc; // original 0.01, is now 0.002
-  parameters.basis = "MINVO"; // edited, original "MINVO"
+  parameters.basis = "MINVO"; // edfited, original "MINVO"
   parameters.a_star_bias = 1.0;
   // parameters.v_max = 20 * Eigen::Vector3d::Ones();
   // parameters.a_max = 20 * Eigen::Vector3d::Ones();
@@ -213,10 +241,10 @@ int main(int argc, char** argv)
   SolverNlopt snlopt(parameters);  // snlopt(a,g) a polynomials of degree 3
   snlopt.setMaxRuntimeKappaAndMu(0.2, 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5
   mt::state initial_state;
-  initial_state.pos = Eigen::Vector3d(-4.0, 0.0, 0.0);
+  initial_state.pos = Eigen::Vector3d(-10,10,0);
 
   mt::state final_state;
-  final_state.pos = Eigen::Vector3d(4.0, 0.0, 0.0);
+  final_state.pos = Eigen::Vector3d(10,-10,0);
 
   double t_min = 0.0;
   double t_max = t_min + (final_state.pos - initial_state.pos).norm() / (0.8 * parameters.v_max(0)); // original 0.3*parameters.v_max, 0.7 kills the entire vm, do not set to 0.7

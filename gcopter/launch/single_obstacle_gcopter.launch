@@ -19,7 +19,7 @@
   <param name="width_max"         type="double" value="1"/>
 
   <!-- just one obstacle -->
-  <param name="obstacle_number"   type="int"    value="1"/>
+  <param name="obstacle_number"   type="int"    value="20"/>
 
 
   <!-- change the type of the map, refer to the mockamap for more details -->
