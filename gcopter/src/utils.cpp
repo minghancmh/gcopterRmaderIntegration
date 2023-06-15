@@ -989,6 +989,8 @@ visualization_msgs::MarkerArray mu::trajectory2ColoredMarkerArray(const mt::traj
     p.z = data[i].pos(2);
     m.points.push_back(p_last);
     m.points.push_back(p);
+    // std::cout << termcolor::red << p.x <<" " <<p.y<<" " <<p.z << termcolor::reset<<std::endl;
+
     // std::cout << "pushing marker\n" << m << std::endl;
     p_last = p;
     marker_array.markers.push_back(m);

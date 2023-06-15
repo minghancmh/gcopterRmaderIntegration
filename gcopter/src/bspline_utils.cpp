@@ -36,6 +36,7 @@ void CPs2TrajAndPwp(std::vector<Eigen::Vector3d> &q, std::vector<mt::state> &tra
   for (int i = 0; i < (N_effective + 1); i++)
   {
     control_points.col(i) = q[i];
+    // std::cout << termcolor::red << q[i] << termcolor::reset << std::endl; // this stops short of the endpoint?
   }
 
   // std::cout << "Matrix control_points is= " << std::endl;

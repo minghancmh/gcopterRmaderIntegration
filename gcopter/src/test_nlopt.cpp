@@ -234,7 +234,7 @@ int main(int argc, char** argv)
   parameters.ftol_rel = 0.0000000000001;// originally 0.0000000000001
   parameters.solver = "LN_NELDERMEAD"; // LD_MMA, LN_NELDERMEAD
   parameters.allow_infeasible_guess = true;
-  parameters.Ra =   20.0; // original 4
+  parameters.Ra =   30.0; // original 4
 
 
 

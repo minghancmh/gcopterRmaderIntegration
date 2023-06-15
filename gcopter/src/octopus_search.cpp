@@ -693,7 +693,8 @@ void OctopusSearch::recoverPath(Node* result_ptr)
   result_.push_back(tmp->qi);  // qN-1
 
   while (tmp != NULL)
-  {
+  { 
+    std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << tmp->qi << termcolor::reset << std::endl; // to view all control pts
     result_.push_back(tmp->qi);
 
     tmp = tmp->previous;
