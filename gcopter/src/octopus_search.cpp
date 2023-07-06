@@ -250,8 +250,8 @@ void OctopusSearch::setMaxValuesAndSamples(Eigen::Vector3d& v_max, Eigen::Vector
     }
   }
 
-  unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-  // unsigned seed = 4203137400;
+  // unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+  unsigned seed = 4203137400;
   std::cout<<"seed:"<<seed<<std::endl;
   shuffle(all_combinations_.begin(), all_combinations_.end(), std::default_random_engine(seed));
 

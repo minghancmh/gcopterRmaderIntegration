@@ -3,6 +3,8 @@
 
 #include "gcopter/trajectory.hpp"
 #include "gcopter/quickhull.hpp"
+#include "termcolor.hpp"
+
 #include "gcopter/geo_utils.hpp"
 
 #include <iostream>
@@ -61,6 +63,7 @@ public:
     inline void visualize(const Trajectory<D> &traj,
                           const std::vector<Eigen::Vector3d> &route)
     {
+        // std::cout << "visualizer" << std::endl;
         visualization_msgs::Marker routeMarker, wayPointsMarker, trajMarker;
 
         routeMarker.id = 0;
@@ -113,6 +116,8 @@ public:
                 point.x = last(0);
                 point.y = last(1);
                 point.z = last(2);
+                // std::cout << "here" << std::endl;
+                // std::cout << termcolor::green << "-------------Routepoint------------\n" << termcolor::red << "x: "<< point.x << "\n" << "y: "<< point.y << "\n" << "z: "<< point.z << "\n"<< termcolor::reset << std::endl; // to view all control pts
                 routeMarker.points.push_back(point);
                 point.x = it(0);
                 point.y = it(1);
@@ -120,7 +125,7 @@ public:
                 routeMarker.points.push_back(point);
                 last = it;
             }
-
+            // std::cout << "publishing route marker" << std::endl;
             routePub.publish(routeMarker);
         }
 
@@ -133,6 +138,8 @@ public:
                 point.x = wps.col(i)(0);
                 point.y = wps.col(i)(1);
                 point.z = wps.col(i)(2);
+                std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << "x: "<< point.x << "\n" << "y: "<< point.y << "\n" << "z: "<< point.z << "\n"<< termcolor::reset << std::endl; // to view all control pts
+
                 wayPointsMarker.points.push_back(point);
             }
 
@@ -151,12 +158,15 @@ public:
                 point.y = lastX(1);
                 point.z = lastX(2);
                 trajMarker.points.push_back(point);
+                // std::cout << termcolor::green << "-------------Trajpoint------------\n" << termcolor::red << "x: "<< point.x << "\n" << "y: "<< point.y << "\n" << "z: "<< point.z << "\n"<< termcolor::reset << std::endl; // to view all control pts
+
                 point.x = X(0);
                 point.y = X(1);
                 point.z = X(2);
                 trajMarker.points.push_back(point);
                 lastX = X;
             }
+            // std::cout << "publishing trajectory " << std::endl;
             trajectoryPub.publish(trajMarker);
         }
     }

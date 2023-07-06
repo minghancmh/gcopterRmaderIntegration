@@ -252,6 +252,8 @@ public:
                 if (traj.getPieceNum() > 0)
                 {
                     trajStamp = ros::Time::now().toSec();
+                    std::cout << "visualizing now" << std::endl;
+
                     visualizer.visualize(traj, route);
                 }
             }

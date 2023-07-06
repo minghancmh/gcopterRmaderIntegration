@@ -230,6 +230,7 @@ public:
                 if (traj.getPieceNum() > 0)
                 {
                     trajStamp = ros::Time::now().toSec();
+                    std::cout << "adljg" << std::endl;
                     visualizer.visualize(traj, route);
                 }
             }

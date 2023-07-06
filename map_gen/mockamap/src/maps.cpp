@@ -46,7 +46,7 @@ Maps::randomMapGenerate()
   rand_h = std::uniform_real_distribution<double>(_h_l, _h_h);
   // double y = 0.0;
   // double x = 0.0;
-  std::srand(1234);
+  std::srand(123);
   for (int i = 0; i < _ObsNum; i++)
   {
     double x, y;

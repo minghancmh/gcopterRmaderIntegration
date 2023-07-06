@@ -101,7 +101,7 @@ int main(int argc, char** argv)
   double bbox_y = 1;
   double bbox_z = 5;
   // int num_pol = 4; // original
-  int num_pol = 20;
+  int num_pol = 20; // number of obstacles
   int deg_pol = 3;
   int samples_x = 5;  // odd number
   int samples_y = 5;  // odd number
@@ -166,7 +166,7 @@ int main(int argc, char** argv)
   std::cout << "hulls_curves.size()= " << hulls_curves.size() << std::endl;
 
   // mt::ConvexHullsOfCurves_Std hulls_std = cu::vectorGCALPol2vectorStdEigen(hulls_curves);
-  std::srand(1234);
+  std::srand(123);
   for (int i = 0; i < num_pol; i++)
   {
     double x_rand = std::rand()%10 - 5;
@@ -232,14 +232,14 @@ int main(int argc, char** argv)
   parameters.epsilon_tol_constraints = 0.001; //original 0.001
   parameters.xtol_rel = 0.0000000000001; // originally 0.0000000000001
   parameters.ftol_rel = 0.0000000000001;// originally 0.0000000000001
-  parameters.solver = "LN_NELDERMEAD"; // LD_MMA, LN_NELDERMEAD
+  parameters.solver = "LD_MMA"; // LD_MMA, LN_NELDERMEAD
   parameters.allow_infeasible_guess = true;
-  parameters.Ra =   30.0; // original 4
+  parameters.Ra =   1e10; // original 4
 
 
 
   SolverNlopt snlopt(parameters);  // snlopt(a,g) a polynomials of degree 3
-  snlopt.setMaxRuntimeKappaAndMu(0.2, 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5
+  snlopt.setMaxRuntimeKappaAndMu(0.25 , 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5 // adjusted to 0.25 maxruntime, generates a more complete path
   mt::state initial_state;
   initial_state.pos = Eigen::Vector3d(-10,10,0);
 
