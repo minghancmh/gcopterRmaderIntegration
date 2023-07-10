@@ -220,8 +220,8 @@ private:
   Eigen::Vector3d v_max_;
   Eigen::Vector3d a_max_;
 
-  double weight_ = 5000000; // original 10000, this should be the weight of the objective function penalty
-  double weight_modified_ = 5000000; // original 10000
+  double weight_ = 10000; // original 10000, this should be the weight of the objective function penalty
+  double weight_modified_ = 10000; // original 10000
 
   // bool force_final_state_ = true;
 

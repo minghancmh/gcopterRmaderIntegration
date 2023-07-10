@@ -138,7 +138,7 @@ public:
                 point.x = wps.col(i)(0);
                 point.y = wps.col(i)(1);
                 point.z = wps.col(i)(2);
-                std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << "x: "<< point.x << "\n" << "y: "<< point.y << "\n" << "z: "<< point.z << "\n"<< termcolor::reset << std::endl; // to view all control pts
+                // std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << "x: "<< point.x << "\n" << "y: "<< point.y << "\n" << "z: "<< point.z << "\n"<< termcolor::reset << std::endl; // to view all control pts
 
                 wayPointsMarker.points.push_back(point);
             }

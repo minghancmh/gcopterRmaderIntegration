@@ -97,7 +97,7 @@ int main(int argc, char** argv)
 
 
 
-  double bbox_x = 1; // original 0.4 for all
+  double bbox_x = 1; // original 0.4 for all (This is the l x w x h of the obstacle, same for both)
   double bbox_y = 1;
   double bbox_z = 5;
   // int num_pol = 4; // original
@@ -106,11 +106,11 @@ int main(int argc, char** argv)
   int samples_x = 5;  // odd number
   int samples_y = 5;  // odd number
   int samples_z = 5;  // odd number
+  Eigen::Vector3d v_max(4.0, 4.0, 4.0);
+  Eigen::Vector3d a_max(19.67, 19.67, 19.67);
   // Eigen::Vector3d v_max(20.0, 20.0, 20.0);
-  // Eigen::Vector3d a_max(20.0, 20.0, 20.0);
-  Eigen::Vector3d v_max(20.0, 20.0, 20.0);
-  Eigen::Vector3d a_max(20000.0, 20000.0, 20000.0);
-  double dc = 0.002; 
+  // Eigen::Vector3d a_max(20000.0, 20000.0, 20000.0);
+  double dc = 0.55243; // this is the resolution 
 
   for (int i = 0; i < num_pol; i++)
   {
@@ -211,13 +211,13 @@ int main(int argc, char** argv)
   ms::par_solver parameters;
 
   // common parameters
-  parameters.num_pol = num_pol;
+  parameters.num_pol = num_pol; // number of obstacles
   parameters.deg_pol = deg_pol; // original 3
   parameters.a_star_samp_x = samples_x;
   parameters.a_star_samp_y = samples_y;
   parameters.a_star_samp_z = samples_z;
   parameters.alpha_shrink = 0.9; // original "0.95"
-  parameters.a_star_fraction_voxel_size = 0.0; // original 0.5
+  parameters.a_star_fraction_voxel_size = 0.25; // original 0.5
   parameters.v_max = v_max; // is now 7,7,7, original (20,20,20)
   parameters.a_max = a_max; // is now 400000, 400000, 400000 original (20,20,20)
   parameters.dc = dc; // original 0.01, is now 0.002
@@ -230,8 +230,8 @@ int main(int argc, char** argv)
   parameters.dist_to_use_straight_guess = 1;
   parameters.weight = 1.0;
   parameters.epsilon_tol_constraints = 0.001; //original 0.001
-  parameters.xtol_rel = 0.0000000000001; // originally 0.0000000000001
-  parameters.ftol_rel = 0.0000000000001;// originally 0.0000000000001
+  parameters.xtol_rel = 0.1; // originally 0.0000000000001
+  parameters.ftol_rel = 0.1;// originally 0.0000000000001
   parameters.solver = "LD_MMA"; // LD_MMA, LN_NELDERMEAD
   parameters.allow_infeasible_guess = true;
   parameters.Ra =   1e10; // original 4
@@ -239,7 +239,7 @@ int main(int argc, char** argv)
 
 
   SolverNlopt snlopt(parameters);  // snlopt(a,g) a polynomials of degree 3
-  snlopt.setMaxRuntimeKappaAndMu(0.25 , 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5 // adjusted to 0.25 maxruntime, generates a more complete path
+  snlopt.setMaxRuntimeKappaAndMu(0.08, 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5 // adjusted to 0.25 maxruntime, generates a more complete path
   mt::state initial_state;
   initial_state.pos = Eigen::Vector3d(-10,10,0);
 

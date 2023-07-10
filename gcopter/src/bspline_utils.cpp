@@ -45,7 +45,7 @@ void CPs2TrajAndPwp(std::vector<Eigen::Vector3d> &q, std::vector<mt::state> &tra
   /*  std::cout << "knots_effective is" << std::endl;
     std::cout << knots_effective << std::endl;*/
 
-  // std::cout << "N_effective= " << N_effective << std::endl;
+  std::cout << "N_effective= " << N_effective << std::endl;
   // std::cout << "M_effective= " << knots_effective.size() - 1 << std::endl;
   // std::cout << "p= " << p << std::endl;
 
@@ -109,8 +109,9 @@ void CPs2TrajAndPwp(std::vector<Eigen::Vector3d> &q, std::vector<mt::state> &tra
   double t_max = knots_effective(knots_effective.size() - 4);  // t_max is this size()-4, see demo in
                                                                // http://nurbscalculator.in/  (slider)
 
-  /*  std::cout << "t_min= " << t_min << std::endl;
-    std::cout << "t_max= " << t_max << std::endl;*/
+  std::cout << "t_min= " << t_min << std::endl;
+  std::cout << "t_max= " << t_max << std::endl;
+  std::cout << "num control points=" << (t_max-t_min) / dc << std::endl;
 
   for (double t = t_min; t <= t_max; t = t + dc)
   {

@@ -39,7 +39,7 @@
   <remap from="/mock_map" to="/voxel_map"/>
   </node>
 
-  	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find gcopter)/config/test_nlopt.rviz"/>
+  	<!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find gcopter)/config/test_nlopt.rviz"/> -->
 
 
 

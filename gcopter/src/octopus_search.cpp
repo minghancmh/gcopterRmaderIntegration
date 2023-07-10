@@ -671,6 +671,7 @@ void OctopusSearch::printPath(Node& node1)
 void OctopusSearch::recoverPath(Node* result_ptr)
 {
   // std::cout << "Recovering path" << std::endl;
+  int count = 0;
   result_.clear();
 
   if (result_ptr == NULL)
@@ -691,11 +692,14 @@ void OctopusSearch::recoverPath(Node* result_ptr)
   //  std::cout << "qi is" << tmp->qi.transpose() << std::endl;
   result_.push_back(tmp->qi);  // qN
   result_.push_back(tmp->qi);  // qN-1
+  std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << tmp->qi << termcolor::reset << std::endl; // to view all control pts
+
 
   while (tmp != NULL)
   { 
-    std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << tmp->qi << termcolor::reset << std::endl; // to view all control pts
+    // std::cout << termcolor::green << "-------------Waypoint------------\n" << termcolor::red << tmp->qi << termcolor::reset << std::endl; // to view all control pts
     result_.push_back(tmp->qi);
+    count ++; 
 
     tmp = tmp->previous;
   }
@@ -703,7 +707,7 @@ void OctopusSearch::recoverPath(Node* result_ptr)
   result_.push_back(q1_);
   result_.push_back(q0_);
 
-  // std::cout << "reverse" << std::endl;
+  std::cout << termcolor::green << "Count: " << count << termcolor::reset << std::endl;
 
   std::reverse(std::begin(result_), std::end(result_));  // result_ is [q0 q1 q2 q3 ...]
 }
