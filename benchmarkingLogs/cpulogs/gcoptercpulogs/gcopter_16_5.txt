@@ -1,0 +1,219 @@
+Starting at : Thu Jul 13 13:56:39 +08 2023
+-----------------------------------------------------
+Setting workspace and sourcing develspace
+workspace set up
+Running Simulation for gcopter
+-----------------------------------------------------
+\n
+Iteration Number: 1
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 21.8142ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 2
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 19.785ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 3
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 25.7433ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 4
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 22.2173ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 5
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 29.3375ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 6
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 21.9759ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 7
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 22.2677ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 8
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 56.4441ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 9
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.0103ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 10
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 29.5716ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 11
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 20.5196ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 12
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 28.1107ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 13
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 18.9133ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 14
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 26.0456ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 15
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.6112ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 16
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 23.8044ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 17
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 21.3293ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 18
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 23.2187ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 19
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 21.1202ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 20
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.528ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 21
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 28.1501ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 22
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.7238ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 23
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 33.7648ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 24
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 26.6253ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 25
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 22.0858ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 26
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 29.1421ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 27
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 20.673ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 28
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 25.0626ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 29
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 27.2712ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 30
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 26.738ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 31
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 39.9881ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 32
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.1854ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 33
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 30.5495ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 34
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 25.292ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 35
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 32.8977ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 36
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 23.506ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 37
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 38.5381ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 38
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 35.0674ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 39
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 20.8122ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 40
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 43.459ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 41
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 20.7548ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 42
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.9258ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 43
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 28.7578ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 44
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.2825ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 45
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 24.5589ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 46
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 17.7863ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 47
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 34.8613ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 48
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 36.8993ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 49
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 21.5134ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 50
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 22.7689ms
+publishing and latching message. Press ctrl-C to terminate
+Iteration Number: 51
+-----------------------------------------------------
+Time for planner algorithm (GCOPTER): 19.6527ms
+publishing and latching message. Press ctrl-C to terminate
+killing:
+ * /mockamap_node
+ * /rosout
+ * /rviz
+ * /single_obstacle
+killed
+Finishing at : Thu Jul 13 13:58:56 +08 2023
+[0m[ INFO] [1689227800.220623509]: finish: infill 0.001542%[0m

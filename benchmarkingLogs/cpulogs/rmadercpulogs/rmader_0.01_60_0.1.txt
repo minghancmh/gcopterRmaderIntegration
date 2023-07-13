@@ -1,0 +1,4510 @@
+Starting at : Thu Jul 13 12:50:05 +08 2023
+-----------------------------------------------------
+Setting workspace and sourcing develspace
+workspace set up
+Running simulation for rmader using nlopt
+-----------------------------------------------------
+Iteration Number: 0
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223806.337957054]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223806.339048108]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223806.391603712]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.8996ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Iteration Number: 1
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.2ms
+[0m[ INFO] [1689223807.158976356]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223807.160621288]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223807.211648188]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.0829ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6799.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:36521/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6813][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 2
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58ms
+[0m[ INFO] [1689223808.647400057]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223808.648733101]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223808.702645791]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.4822ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6831.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:39079/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6845][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 3
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.6ms
+[0m[ INFO] [1689223810.169668575]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223810.170671517]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223810.223662111]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.2611ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6862.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:33575/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6876][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 4
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223811.644276191]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223811.645647337]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223811.699764463]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.2519ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6893.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:38337/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6907][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 5
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.8ms
+[0m[ INFO] [1689223813.124693292]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223813.125756371]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223813.177252502]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 117.8382ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6924.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41579/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6938][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 6
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58ms
+[0m[ INFO] [1689223814.686938252]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223814.687999556]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223814.742112908]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.9717ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6955.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:45249/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [6969][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 7
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 59.2ms
+[0m[ INFO] [1689223816.202663089]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223816.203841585]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223816.258165466]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 122.5767ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-6986.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:45529/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7000][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 8
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.7ms
+[0m[ INFO] [1689223817.674533883]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223817.675511832]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223817.727247915]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 117.143ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7017.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:45799/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7031][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 9
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.2ms
+[0m[ INFO] [1689223819.155692597]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223819.156650241]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223819.210686966]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.4483ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7048.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34925/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7062][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 10
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 8.3
+-7.5
+   0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.5ms
+[0m[ INFO] [1689223820.531025836]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223820.532222515]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223820.584189360]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  8.3 -7.5    0
+obj_guess= 295.4393(36.6996 + 258.7397)
+obj_obtained= 295.4393(36.6996 + 258.7397)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.9186ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7079.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:33435/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7093][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 11
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.4ms
+[0m[ INFO] [1689223822.030574042]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223822.031652672]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223822.087197838]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 55 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 123.111ms
+Time_needed (line 241, test_nlopt):55ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7110.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:38183/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7124][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 12
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.7ms
+[0m[ INFO] [1689223823.547069531]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223823.548127288]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223823.601477675]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.7256ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7141.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:44293/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7155][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 13
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223825.114604891]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223825.115601403]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223825.170894132]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 55 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.3719ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7172.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:39639/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7186][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 14
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.6ms
+[0m[ INFO] [1689223826.591685819]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223826.592752254]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223826.647249661]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.3225ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7203.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:38287/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7217][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 15
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223828.088824611]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223828.089981384]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223828.143506805]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.482ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7234.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:38319/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7248][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 16
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223829.588783735]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223829.589926970]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223829.642976557]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.0492ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7265.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:40541/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7279][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 17
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223831.093794886]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223831.095153911]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223831.146886848]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.5224ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7296.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:39657/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7310][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 18
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58ms
+[0m[ INFO] [1689223832.595137128]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223832.596201204]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223832.650740755]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.9476ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7327.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:39919/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7341][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 19
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223834.078213612]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223834.079211586]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223834.130337381]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 117.5857ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7358.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:37661/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7372][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 20
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.5ms
+[0m[ INFO] [1689223835.639437929]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223835.640520634]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223835.694263987]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.1131ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7389.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:42987/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7403][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 21
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.3ms
+[0m[ INFO] [1689223837.109409432]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223837.110533462]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223837.164575728]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.7998ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7420.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:33661/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7434][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 22
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223838.592088227]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223838.593241453]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223838.647507012]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.6117ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7451.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:33463/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7465][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 23
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.3ms
+[0m[ INFO] [1689223840.085447551]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223840.086758540]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223840.138077875]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.0858ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7482.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41307/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7496][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 24
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.3ms
+[0m[ INFO] [1689223841.667341213]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223841.668625945]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223841.722707025]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.0146ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7513.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34237/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7527][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 25
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.2ms
+[0m[ INFO] [1689223843.154467247]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223843.155397892]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223843.209914431]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.9771ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7544.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34947/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7558][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 26
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.8ms
+[0m[ INFO] [1689223844.624660396]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223844.625669994]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223844.678908804]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.6866ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7576.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:46157/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7590][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 27
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.8ms
+[0m[ INFO] [1689223846.130591970]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223846.132152762]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223846.183642005]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.2398ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7607.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:36859/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7621][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 28
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.5ms
+[0m[ INFO] [1689223847.636956778]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223847.638104554]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223847.688954845]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.4066ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7638.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:35693/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7652][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 29
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58ms
+[0m[ INFO] [1689223849.102002691]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223849.103063202]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223849.157571415]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.9694ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7669.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34505/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7683][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 30
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.5ms
+[0m[ INFO] [1689223850.705838523]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223850.706929073]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223850.761326052]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.1929ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7700.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:36035/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7714][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 31
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223852.287729240]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223852.288739801]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223852.343353024]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.6062ms
+Time_needed (line 241, test_nlopt):54ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7731.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:46025/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7745][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 32
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.5ms
+[0m[ INFO] [1689223853.758761622]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223853.759916986]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223853.811441444]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.4251ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7762.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41847/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7776][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 33
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.4ms
+[0m[ INFO] [1689223855.246114919]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223855.247262654]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223855.298029950]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.0295ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7793.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:36969/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7807][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 34
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.1ms
+[0m[ INFO] [1689223856.747560316]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223856.748673438]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223856.800605715]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.7196ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7824.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:43519/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7838][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 35
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 60.1ms
+[0m[ INFO] [1689223858.236630889]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223858.237909123]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223858.291371901]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 122.6115ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7855.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41413/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7869][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 36
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.4ms
+[0m[ INFO] [1689223859.743542430]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223859.744673528]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223859.797071191]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.6159ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7886.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:36919/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7900][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 37
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.7ms
+[0m[ INFO] [1689223861.220420382]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223861.221463145]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223861.273224095]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.2138ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7917.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34703/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7931][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 38
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58ms
+[0m[ INFO] [1689223862.709441593]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223862.710590498]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223862.764316074]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.3103ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7948.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34723/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7962][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 39
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 59.2ms
+[0m[ INFO] [1689223864.188381560]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223864.189380066]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223864.243241577]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.3851ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-7979.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:38083/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [7993][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 40
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 59.1ms
+[0m[ INFO] [1689223865.687246396]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223865.688181422]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223865.739603534]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.2581ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8010.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:37365/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8024][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 41
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.4ms
+[0m[ INFO] [1689223867.195205548]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223867.196325072]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223867.250109849]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.8922ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8041.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:45823/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8055][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 42
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223868.675626213]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223868.676755240]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223868.727605150]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 117.284ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8072.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:35661/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8086][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 43
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.7ms
+[0m[ INFO] [1689223870.183036406]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223870.184116582]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223870.238447158]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 54 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.6558ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8103.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41275/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8117][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 44
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223871.670940896]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223871.672033611]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223871.725996323]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.5601ms
+Time_needed (line 241, test_nlopt):53ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8134.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:41737/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8148][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 45
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 59.4ms
+[0m[ INFO] [1689223873.054339860]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223873.055606934]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223873.108507614]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 121.1752ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8165.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:42589/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8179][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 46
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.5ms
+[0m[ INFO] [1689223874.652521054]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223874.653624643]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223874.705034694]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.464ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8196.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:33471/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8210][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 47
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.9ms
+[0m[ INFO] [1689223876.144968161]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223876.146077642]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223876.199224996]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 52 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.5229ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8227.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:34573/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8241][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 48
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 57.8ms
+[0m[ INFO] [1689223877.652067194]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223877.653395986]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223877.706700142]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 53 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.028ms
+Time_needed (line 241, test_nlopt):52ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8258.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:39647/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8272][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 49
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.9ms
+[0m[ INFO] [1689223879.157069927]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223879.158113930]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223879.209246413]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 50 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 119.0866ms
+Time_needed (line 241, test_nlopt):50ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8289.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:45895/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8303][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 50
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 58.3ms
+[0m[ INFO] [1689223880.652645409]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223880.653770132]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223880.705392421]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 118.4514ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8320.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:35393/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8334][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Iteration Number: 51
+-----------------------------------------------------
+Basis= MINVO
+hulls_curves.size()= 0
+==============Initializing a SolverNLopt Object===================
+t_min= 0
+t_max= 8.83883
+=========================
+initial_state= 
+Pos, Vel, Accel, Jerk= -10  10   0 0 0 0 0 0 0 0 0 0
+final_state= 
+Pos, Vel, Accel, Jerk=  10 -10   0 0 0 0 0 0 0 0 0 0
+Calling optimize
+Optimizing now...
+==============Generating A Star Guess===================
+[NL] Running A* from-10  10   0 to  10 -10   0, allowing time = 50 ms
+seed:4203137400
+=====================Running Octopus Search===================
+[A*] Running...
+[A*] Max Runtime was reached
+[A*] choosing closest path as solution
+-------------Waypoint------------
+ 9.89
+-9.89
+    0
+Count: 19
+Time for planner algorithm (RMADER - octopusSolver_ -> run): 59.8ms
+[0m[ INFO] [1689223882.133702235]: [NL] A* found a feasible solution![0m
+[0m[ INFO] [1689223882.134930554]: [NL] Using the A* guess[0m
+The infeasible constraints of the initial Guess
+Infeasible Constraints Highlighted in Red
+_______________________
+Indexes constraints
+Obstacles: 0-->4799
+Velocity: 4800-->5141
+Accel: 5142-->5255
+Total number of Constraints: 5336
+_______________________
+_______________________
+Indexes variables
+q: 0-->53
+n: 54-->1253
+d: 1254-->1653
+Total number of Variables: 1654
+_______________________
+[NL] Optimizing now, allowing time = 50ms
+[0m[ INFO] [1689223882.186393367]: [NL] Feasible, code=Maxtime_reached[0m
+[NL] Feasible Solution found 51 ms 
+q[N_]=  9.89 -9.89     0
+obj_guess= 46.27698(45.55948 + 0.7174965)
+obj_obtained= 46.27698(45.55948 + 0.7174965)
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+Time for planner algorithm (RMADER - snlopt.optimize(...)): 120.365ms
+Time_needed (line 241, test_nlopt):51ms
+N_effective= 22
+t_min= 0
+t_max= 8.838835
+num control points=883.8835
+... logging to /home/cminghan/.ros/log/bc6a5526-2138-11ee-8fcc-00155debe226/roslaunch-P-D21000977-8351.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch
+[1mstarted roslaunch server http://P-D21000977:42533/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /test_nlopt/basis: MINVO
+
+NODES
+  /
+    test_nlopt (gcopter/test_nlopt)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/cminghan/gcopter_ws/src/GCOPTER/gcopter/launch/nlopt_refresh.launch http://localhost:11311
+[1mprocess[test_nlopt-1]: started with pid [8365][0m
+[test_nlopt-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+killing:
+ * /mockamap_node
+ * /rosout
+killed
+Finishing at : Thu Jul 13 12:51:23 +08 2023
+[0m[ INFO] [1689223806.246721591]: finish: infill 0.001542%[0m

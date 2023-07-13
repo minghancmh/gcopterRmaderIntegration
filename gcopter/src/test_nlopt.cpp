@@ -110,7 +110,7 @@ int main(int argc, char** argv)
   Eigen::Vector3d a_max(19.67, 19.67, 19.67);
   // Eigen::Vector3d v_max(20.0, 20.0, 20.0);
   // Eigen::Vector3d a_max(20000.0, 20000.0, 20000.0);
-  double dc = 0.55243; // this is the resolution 
+  double dc = 0.01; // this is the resolution 
 
   for (int i = 0; i < num_pol; i++)
   {
@@ -239,7 +239,7 @@ int main(int argc, char** argv)
 
 
   SolverNlopt snlopt(parameters);  // snlopt(a,g) a polynomials of degree 3
-  snlopt.setMaxRuntimeKappaAndMu(0.08, 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5 // adjusted to 0.25 maxruntime, generates a more complete path
+  snlopt.setMaxRuntimeKappaAndMu(0.1, 0.5, 0.5); // maxRuntime should be 0.2, kappa and mu should be 0.5 // adjusted to 0.25 maxruntime, generates a more complete path
   mt::state initial_state;
   initial_state.pos = Eigen::Vector3d(-10,10,0);
 
