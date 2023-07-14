@@ -31,6 +31,29 @@ class RmaderFormatter:
             timeList.append(np.mean(timeList))
         self.fullArr = timeList
         return self.fullArr
+    
+    def success(self):
+
+        import re
+        import numpy as np
+
+        with open(self.filePath) as f:
+            lines = f.readlines()
+            text = ''.join(lines)
+            split_text = re.split(r"=+Running Octopus Search=+", text)
+            timeList = []   
+            for text in split_text:
+                waypoint_pattern = r'-------------Waypoint------------\n\s*([\d.-]+)\n\s*([\d.-]+)\n\s*([\d.-]+)'
+                waypoint_matches = re.findall(waypoint_pattern, text)
+                # print(waypoint_matches)
+                for waypoint_match in waypoint_matches:
+                    if float(waypoint_match[0]) > 9.5 and float(waypoint_match[1]) < -9.5:
+                        patternForTime = r"Time for planner algorithm.*?(\d+\.?\d*)ms"
+                        time = re.findall(patternForTime, text)
+                        timeList.append(float(time[1]))
+                
+            return len(timeList) / 52 * 100
+
 
 
     def changeFilePath(self, filePath):
