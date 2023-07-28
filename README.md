@@ -13,11 +13,14 @@ At present, this repository has benchmarked the GCOPTER and RMADER optimization 
 
 <h3> Ubuntu </h3>
 
-Please install [Ubuntu 20.06](https://releases.ubuntu.com/focal/), using WSL2.
+Please install [Ubuntu 20.04](https://www.cyberithub.com/how-to-install-ubuntu-20-04-lts-on-windows-10-wsl/), using WSL2.
 
 <h3> ROS </h3>
 
 Please install [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu).
+[Easy Install](http://wiki.ros.org/ROS/Installation/TwoLineInstall/)
+
+
 
 <h3> Rviz </h3>
 
@@ -33,6 +36,7 @@ Simply run the commands:
 ```bash
 cd ~/ && mkdir ws && cd ws && mkdir src && cd src
 git clone https://github.com/minghancmh/gcopterRmaderIntegration.git
+sudo apt-get install python3-catkin_tools
 cd ..
 bash install_nlopt.sh
 bash install_and_compile.sh    
@@ -57,6 +61,12 @@ source devel/setup.bash
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org <package_name>
 ```
 
+<h5> check certificate fail </h5>
+
+```bash
+git config --global http.sshverify false
+```
+
 
 <h3> Running Simulations </h3>
 
@@ -79,4 +89,24 @@ The GCOPTER and RMADER algorithms were ran over 50 simulations on identical maps
 The "benchmarkingLogs" contain all raw logs before parsing and processing.
 
 The logs are parsed using the GcopterFormatter.py and RmaderFormatter.py files.
+
+
+<h3> For use of VSC in Ubuntu Environment </h3>
+
+Enable the remote desktop VSC extension. Ensure that ssh is running before attempting to connect to ubuntu vm ip addr.
+
+To check status of ssh
+```bash
+sudo service ssh status
+```
+
+To start ssh server
+```bash
+sudo service ssh start
+```
+
+To restart ssh server
+```bash
+sudo service ssh restart
+```
 
